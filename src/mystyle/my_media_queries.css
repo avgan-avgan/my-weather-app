@@ -1,0 +1,22 @@
+@media screen and (max-width: 700px){
+    .my_links{
+        flex-wrap: wrap;
+    }
+    .my_links > div{
+        width: 100%;
+    }
+    .my_links div section{
+        font-size: 3vw;
+    }
+
+    .chosen_forecast .link_buttons{
+        flex-wrap: wrap;
+        /*border: 2px solid red;*/
+    }
+    .chosen_forecast .link_buttons section{
+        width: 25%;
+    }
+    .chosen_forecast .link_buttons section aside{
+        font-size: 2.5vw;
+    }
+}

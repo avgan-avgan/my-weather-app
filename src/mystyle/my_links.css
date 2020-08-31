@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #cbf6f0;
+    margin: 0;
+}
+.my_links{
+    /*border: 2px solid chocolate;*/
+    display: flex;
+}
+
+.my_links div{
+    /*border: 1px solid crimson;*/
+    width: 20%;
+    background: #abe7f1;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s ease-in-out 0s;
+}
+.my_links div section{
+    /*border: 1px solid red;*/
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+.my_links div:hover{
+    background: #5aafba;
+}
+
+.chosen_forecast{
+    /*border: 1px solid fuchsia;*/
+}
+.chosen_forecast .link_buttons{
+    /*border: 1px solid #1eac04;*/
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+.chosen_forecast .link_buttons section{
+    /*border: 1px solid darkgreen;*/
+    width: 12.5%;
+    cursor: pointer;
+    text-align: center;
+    transition: .4s ease-in-out 0s;
+}
+.chosen_forecast .link_buttons section aside{
+    width: 100%;
+    font-size: 1.3vw;
+}
+.chosen_forecast .link_buttons section:hover{
+    background: #0deeee;
+}
+
+.chosen_forecast .info_container{
+    /*border: 2px solid forestgreen;*/
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+/*** main circle ****/
+
+main{
+    /*border: 2px solid rebeccapurple;*/
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #8fccea;
+}
+/*** header ****/
+header{
+    text-align: center;
+    /*border: 2px solid red;*/
+    height: 30%;
+    position: relative;
+}
+header div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*** section middle ****/
+section.middle{
+    text-align: center;
+    /*border: 2px solid blue;*/
+    height: 40%;
+}
+section.middle aside{
+    /*border: 2px solid black;*/
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+section.middle aside.state_box section{
+    position: relative;
+    height: 100%;
+    /*border: 2px solid salmon;*/
+}
+section.middle aside.state_box section div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 2px solid #0ef8f8;*/
+}
+/*** footer ****/
+footer{
+    text-align: center;
+    /*border: 2px solid darkorange;*/
+    height: 30%;
+}
+/*** language option section ****/
+.lang_option{
+    /*border: 2px salmon solid;*/
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 0;
+}
+.lang_option span{
+    margin-right: 1.5vw;
+    padding: 5px;
+    cursor: pointer;
+    /*border: 1px solid #5502ee;*/
+    border-radius: 50%;
+    background-color: #6ff1e6;
+    user-select: none;
+    transition: .3s ease-in-out 0s;
+}
+.lang_option span:hover{
+    background-color: #11e2d1;
+}
